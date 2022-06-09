@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Float Property</title>
+</head>
+<style>
+	div {
+		background-color: #226666;
+	}
+	p {
+		width: 50px;
+		height: 50px;
+		border: 1px solid black;
+	}
+
+	#p1 {
+		background-color: rgb(11, 23, 90);
+		float: left;
+		height: 150px;
+	}
+	#p2 {
+		background-color: yellow;
+		float: right;
+		height: 100px;
+	}
+	#p3 {
+		background-color: rgb(238, 42, 11);
+		clear: both;
+	}
+	#p4 {
+		background-color: orange;
+	}
+</style>
+<body>
+	<h1>The CSS Float Property</h1>
+<div>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+</div>
+<section>
+	<ul>
+    <li>The "Float" Property indicates whether an element should float to the left, right, or not at all. Absolutely positioned elements ignore the float property.</li>
+       <li>When you float elements, the browser takes them out of the regular document flow and places them at the top left or right edge of the containing elememt.</li>
+   </ul>   
+<h4>The Clear Property</h4>
+    <ul>
+     <li>Elements next to a floating element will flow around it. To avoid this, you use the "clear" property. The clear Property resumes the normal document flow. could be clear left, right, or both.</li>
+<li> Floating Elements can produce very flexible layouts.</li>
+</section>
+</body>
+</html>

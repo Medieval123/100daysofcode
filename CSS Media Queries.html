@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media Queries</title>
+	<style>
+		        /*  ** Base styles ***/
+h1 {
+	margin-bottom: 15px;
+}
+p {
+	border: 1px solid black;
+	margin-bottom: 15px;
+}
+#p1 {
+	background-color: #061539;
+	width: 220px;
+	height: 220px;
+}
+#p2 {
+	background-color: yellow;
+	width: 50px;
+	height: 50px;
+}
+          /*** Large devices only ***/
+@media  (min-width: 1200px) {
+	#p1 {
+		width: 80%;
+	}
+	#p2 {
+		width: 150px;
+		height: 150px;
+	}
+}
+               /* Medium devices only*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#p1 {
+		width: 50%;
+	}
+	#p2 {
+		width: 100px;
+		height: 100px;
+	}
+}
+div#cover {
+	background-color: gray;
+}
+	</style>
+</head>
+<body>
+	<h1>CSS Media Queries</h1>
+	<div id="cover">
+	<p id="p1"></p>
+	<p id="p2"></p>
+</div>
+
+<section>
+	<ul>
+		<li>Media Queries enable you to group styles together and target them to devices (medium or large) based on some certain criteria. Each media feature results to either true or false. If true, the style within the curly braces apply. </li>
+	</ul>
+	<h4>Basic Syntax of a media query</h4>
+	<ul>
+		<li>@media (media feature)</li>
+		<li>@media (media feature) logical operator (media feature)</li>
+	</ul>
+	<h4>media features can be combined using logical operators(OR & AND).</h4>
+	<ul>
+		<li>Usually, you provide base styling, then change or add to them in each media query.</li>
+		<li>NB: Be careful not to overlap range boundaries(breakpoints).</li>
+	</ul>
+</section>
+</body>
+</html>

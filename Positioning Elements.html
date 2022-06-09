@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Positioning Elements</title>
+</head>
+<style>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	h1 {
+		margin-bottom: 15px;
+	}
+	div#container {
+		background-color: #226666;
+		position: relative;
+	}
+	p {
+		width: 50px;
+		height: 50px;
+		border: 1px solid black;
+		margin-bottom: 15px;
+	}
+	#p1 {
+		background-color: #061539;
+		position: relative;
+		top: 65px;
+		left: 65px;
+	}
+	#p2 {
+		background-color: yellow;
+	}
+	#p3 {
+		background-color: #260339;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#p4 {
+		background-color: orangered;
+	}
+</style>
+<body>
+	<h1>Relative and Absolute Element Positioning</h1>
+<div id="container">
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+</div>
+<section>
+<ul>
+	<li>These Positioning schemes enable you to specify precise offsets to move the target element to a different part of the page origin. </li>
+</ul>
+<h4>Static Positioning</h4>
+<ul>
+	<li>This is equivalent to the normal document flow. It is a default setting for all elements except html.</li>
+</ul>
+<h4>Relative Positioning</h4>
+<ul>
+	<li>When this is applied, the element is positioned relative to its position in the normal document flow. Therefore, if offsets are applied on that element, there will be offset from the original document flow position of that elememt.</li>
+	<li>The Positioning offset properties are : top, bottom, right, and left.</li>
+	<li>The element is NOT taken out of normal document flow. If moved, its original spot is preserved.</li>
+</ul>
+<h4>Absolute Positioning</h4>
+<ul>
+	<li>Here, All offsets(top, bottom, right, left) are relative to the position of the nearest ancestor which has the positioning set on it, other than static.</li>
+	<li>The element is taken out of its normal document flow.</li>
+	<li>If the Container element is offset, everything inside is offset with it.</li>
+</ul>
+</section>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> box model</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			color: black;
+		}
+		body {
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1vtOX-3EtXKUbqPooWs1TUtjROxSGLoUVDw&usqp=CAU);
+			background-size: cover;
+		}
+		#model {
+			padding: 10px;
+			border: 5px solid black;
+			background-color: royalblue;
+			margin-top: 5px;
+			margin-left: 20px;
+			width: 650px;
+			height: 179px;
+			overflow: auto;
+		}
+		#box {
+			background-color: whitesmoke;
+		}
+	</style>
+</head>
+<body>
+	<h1>THE BOX MODEL</h1>
+	<div id="model">
+	<div id="box">The CSS Box Model is generally described as a box that wraps around every HTML element. It consists of : margins, borders, padding and the Actual content.
+       <p
+		 <ul>
+		 	<li>Content: This is the where the text and images appear.</li>
+		 	<li>Padding: It clears an area around the content. The padding is always transparent.</li>
+		 	<li>Border: This is a border that goes around the padding and the content.</li>
+		 	<li>Margin: The margin clears an area outside of the border. It is also transparent.</li>
+		 </ul>
+        </p>
+    <section>
+    	<h4>Width and Height</h4>
+    	<p>
+    		When the width and height properties of an element are put in place, only the content area is affected.
+    	<p>Also, to calculate the full size of an element, you must also add the padding, borders, and the margins.</p>
+    	</p>
+    </section>
+</body>
+</html>
