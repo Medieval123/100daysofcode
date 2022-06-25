@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medieval's Netflix Homepage</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bc3a1796c2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCoJS-dBfJsXZnegxkz4U-k1kv7YjdhTWDGQ&usqp=CAU"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+  </head>
+  <body>
+
+    <div class="navbar">
+<li class="logo"><img src="data:image/jpeg;base64,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"></li>
+<li class="buttons">Sign In</a>
+
+    </div>
+    <div class="main">
+<div class="area">
+  <h1>Unlimited movies, TV <br>shows, and more.</h1>
+  <h3>Watch anywhere. Cancel anytime.
+    </h3>
+
+    <div class="search">
+      <input type="text" class="box" placeholder="Email">
+      <span class="try">
+Try 30 days free <i class="fas fa-chevron-right"></i>
+
+
+      </span>
+</div>
+<h4>Ready to watch? Enter your email to create or access your account
+  </h4>
+    </div>
+   
+    </div>
+    <div class="container1">
+        <div class="text">
+          <h1>Enjoy on your TV.
+            </h1>
+            <p>
+                Watch on Smart TVs, Playstation, Xbox, <br>
+                Chromecast, Apple TV, Blu-ray players, and<br>
+                 more.
+            </p>
+        </div>
+        <div class="image">
+  <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png">
+        </div>
+      </div>
+      <div class="container1">
+          
+          <div class="image">
+    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile.png">
+          </div>
+          <div class="text">
+              <h1>Download your shows to watch on the go.
+                </h1>
+                <p>
+                    Save your data and watch all your favorites offline.
+                </p>
+            </div>
+            
+        </div>
+        <div class="container1">
+            <div class="text">
+              <h1>Watch everywhere.
+
+                </h1>
+                <p>
+                    Stream unlimited movies and TV shows on <br>your phone, tablet, laptop, and TV without paying more.
+
+                </p>
+            </div>
+            <div class="image">
+      <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png">
+            </div>
+          </div>
+          <div class="question">
+            <h1>Frequently Asked Questions
+              </h1>
+              <div class="quest">
+                <div class="textbox">What is Netflix?</div>
+                <i class="las la-plus"></i>
+              </div>
+              <div class="quest">
+                  <div class="textbox">How much does Netflix cost?</div>
+                  <i class="las la-plus"></i>
+                </div>             
+                <div class="quest">
+                    <div class="textbox">Where can I watch?</div>
+                    <i class="las la-plus"></i>
+                  </div>                 <div class="quest">
+                    <div class="textbox">How do I cancel?</div>
+                    <i class="las la-plus"></i>
+                  </div>               
+                  <div class="quest">
+                      <div class="textbox">What can I watch on Netflix??</div>
+                      <i class="las la-plus"></i>
+                    </div>
+                    <div class="quest">
+                        <div class="textbox">What is Netflix?</div>
+                        <i class="las la-plus"></i>                   
+                      </div>    
+                      <div class="search1">
+                          <input type="text" class="box1" placeholder="Email">
+                          <span class="try1">
+                    Try 30 days free <i class="fas fa-chevron-right"></i>
+                    
+                    
+                          </span>
+                          
+                    </div>      
+                    <h4>Ready to watch? Enter your email to create or access your account
+                      </h4>
+                    </div>
+                    <div class="footer">
+
+
+                        <div class="footercon">
+                          <div class="flex1">
+                                                    <h5>Questions? Call +234 90-3904-3344 <br> OLABIYI JUDAH
+                            </h5>
+                            <h5>
+    </h5>
+                          </div>
+                          
+               <ul class="list1">
+                 
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Investor Relation</a></li>
+                        <li><a href="">Ways to Watch</a></li>
+
+                        <li><a href="">Corporate Information</a></li>
+                        <li><a href="">Netflix Originals</a></li>
+                        </ul>
+                        <ul class="list1">
+                        <li><a href="">Home</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">Terms of Use</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">#</a></li>
+                            </ul>
+                            <ul class="list1">
+                                <li><a href="">Account</a></li>
+                                <li><a href="">Redeem Gift Cards</a></li>
+                                <li><a href="">Privacy</a></li>
+                                <li><a href="">Speed Test</a></li>
+                                <li><a href="">#</a></li>
+
+                                </ul>
+                                <ul class="list1">
+                                    <li><a href="">Media Center<</a></li>
+                                    <li><a href="">Buy Gift Cards</a></li>
+                                    <li><a href="">Cookie Preferences</a></li>
+                                    <li><a href="">Legal Notices</a></li>
+                                    <li><a href="">#</a></li>
+
+                                    </ul>
+                                 
+                    </div>
+
+                  </div>
+                  <div class="end">
+<h2>
+&copy; Godspeed 2022.
+</h2> 
+<h2>
+  </h2>                    </div>
+  </body>
+</html>
