@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background: linear-gradient(to bottom right, #c31432, #240b36);
+}
+
+.page {
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+#title, footer, #description {
+	color: #fff;
+	text-align: center;
+}
+
+#title h1 {
+	margin-bottom: 0;
+}
+
+form {
+	box-shadow: -2px 2px 30px -2px rgba(0, 0, 0, 0.7);
+	padding: 5%;
+	background-color: #f5f5f5;
+	margin-bottom: 5%;
+	border-radius: 10px;
+}
+
+input, label, button {
+	display: block;
+	margin-bottom: .8rem;
+}
+
+input[type="radio"], input[type="checkbox"], select {
+	display: inline;
+	margin-bottom: 1.5rem;
+}
+
+select {
+	background: #fff;
+}
+
+label {
+	font-weight: bolder;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+	width: 100%;
+	padding: 1.5%;
+	outline: none;
+	font-size: 1rem;
+}
+
+textarea {
+	margin-bottom: 10px;
+	height: 150px;
+	border-radius: 8px;
+}
+
+button {
+	border-radius: 50px;
+	padding: 1.5% 6% 1.5% 6%;
+	border: 1px solid gray;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+	width: 100%;
+	padding: 1.5% 2% 1.5% 2%;
+	outline: none;
+	border: 1px solid grey;
+	border-radius: 50px;
+}
+
+.names input[type="text"] {
+	display: inline;
+	width: 48%;
+	float: left;
+}
+
+.names input[type="text"]:first-child {
+	margin-right: 2%;
+}
+
+.names input[type="text"]:last-child {
+	margin-left: 2%;
+}
+
+footer {
+	font-size: small;
+	margin-bottom: 4%;
+}
+
+ul {
+	list-style: none;
+	margin-left: -5%;
+}
+
+ /*** Media Queries ***/
+ @media only screen and (max-width: 800px) {
+ 	.page {
+ 		max-width: 70%;
+ 	}
+ 	ul {
+ 		margin-left: -8%;
+ 	}
+
+ 	.names input[type="text"] {
+ 		width: 100%;
+ 	}
+ 	.names input[type=text]:first-child {
+ 		margin-right: 0;
+ 	}
+ 	.name input[type="text"]:last-child {
+ 		margin-left: 0;
+ 	}
+ 	input[type="text"], input[type="email"], input[type="number"], select {
+ 		padding: 1.5% 3% 1.5% 3%;
+ 	}
+ }
+
+ @media screen and (max-width: 500px) {
+ 	.page {
+ 		max-width: 90%;
+ 	}
+
+ 	ul {
+ 		margin-left: -10%;
+ 	}
+ }

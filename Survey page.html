@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="page">
+		<header>
+			<h1 id="title">Medieval Concepts</h1>
+			<h2 id="title">Site Survey Form</h2>
+			<p id="description">Kindly fill out the form to help us improve our website</p>
+		</header>
+		<section>
+			<form id="survey-form">
+				<label for ="name" id="name-label">Your name</label>
+				<div class="names">
+					<input type="text" id="name" required="true" placeholder="First Name">
+					<input type="text" id="fname" required="true" placeholder="Last Name">
+				</div>
+				<label for="email" id="email-label">Your Email</label>
+				<input type="email" id="email" required="true" placeholder="Medieval@gmail.com">
+				<label for="name" id="number-label">Your Age</label>
+				<input type="number" min="1" max="80" placeholder="Age" id="number" placeholder="24">
+				<label>How did you hear about this website?</label>
+						<select id="dropdown">
+									<option>Select Option</option>
+									<option>Social Media</option>
+									<option>Advertisement</option>
+									<option>Search Engine</option>
+									<option>My Friends</option>
+						</select> 
+						<label>What medium are you currently using to access the website?</label>
+							<ul>
+								<li><input type="checkbox" name="" value="1">Desktop/Laptop</li>
+								<li><input type="checkbox" name="" value="2">Mobile device</li>
+								<li><input type="checkbox" name="" value="3">Ipad/Tablet</li>
+							</ul>
+							<label>What browser do you use to access the site?</label>
+							<ul>
+								<li><input type="radio" name="browser" value="mf">Mozilla Firefox</li>
+								<li><input type="radio" name="browser" value="ie">Internet Explorer</li>
+								<li><input type="radio" name="browser" value="s">Safari</li>
+								<li><input type="radio"  name="browser" value="om">Opera Mini</li>
+								<li><input type="radio" name="browser" value="o">Others</li>
+							</ul>
+							<label>Are you Satisfied with the Website?</label>
+							<ul>
+								<li><input type="radio" name="browser" value="mf">Very Satisfied</li>
+								<li><input type="radio" name="browser" value="gc">Satisfied</li>
+								<li><input type="radio" name="browser" value="ie">Neutral</li>
+								<li><input type="radio" name="browser" value="om">Unsatisfied</li>
+								<li><input type="radio" name="browser" value="s">Very Unsatisfied</li>
+							</ul>
+							<label>Additional comments</label>
+							<textarea placeholder="Other comments"></textarea>
+							<button type="submit" id="submit">Submit</button>
+						</form>
+					</section>
+					<footer>
+						<span>&copy; Godspeed 2022. Developed by Olabiyi Judah</span>
+					</footer>
+				</div>
+</body>
+<script src="script.js"></script>
+</html>

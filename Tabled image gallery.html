@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabbed Image Gallery</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			background-color: antiquewhite;
+
+		}
+      body {
+      	margin: 0;
+      	font-family: Arial;
+      }
+        /*** The grid : Four equal columns that floats next to each other ***/
+        .column {
+        	float: left;
+        	width: 25%;
+        	padding: 10px;
+        }
+  /*** Style the images inside the grid ***/
+  .column img:hover {
+  	opacity: ;
+  }
+  /*** Clear floats after the columns ***/
+  .row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+  }
+
+  /*** The Expanding image container ***/
+  .container {
+  	position: relative;
+  	display: none;
+  }
+
+  /*** Expanding image text ***/
+  #imgtext {
+  	position: absolute;
+  	bottom: 15px;
+  	left: 15px;
+  	color: white;
+  	font-size: 20px;
+  }
+
+  /*** Closable button inside the expanded image ***/
+  .closebtn {
+  	position: absolute;
+  	top: 10px;
+  	right: 15px;
+  	color: white;
+  	font-size: 35px;
+  	cursor: pointer;
+  }
+#footer {
+	height: 50px;
+	width: 100%;
+	clear: both;
+	position: relative;
+	font-size: 15px;
+	font-family: cursive;
+}
+	</style>
+</head>
+<body>
+
+<div style="text-align:center">
+	<h2>Judah's Image Gallery</h2>
+	<h4>&copy; Godspeed 2022.</h4>
+	<p>Click on any of the images below:</p>
+</div>
+	<!-- The grid: four columns -->
+	<div class="row">
+		<div class="column">
+			<img src="Nature/image1.jpg" alt="SpaceX" style="width:100%" onclick="myFunction(this);"></div>
+			<div class="column">
+				<img src="Nature/image2.jpg" alt="milky way Garden" style="width:100%" onclick="myFunction(this);"></div>
+				<div class="column">
+					<img src="Nature/image3.jpg" alt="Mountains"  style="width:100%" onclick="myFunction(this);"></div>
+					<div class="column">
+						<img src="Nature/image4.jpg" alt="Namib desert" style="width:100%" onclick="myFunction(this);"></div>
+					</div>
+
+						<!--The Expanding image Container -->
+
+						<div class="container">
+							<!-- Close the Page -->
+							<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+							<!-- Expanded Image -->
+							<img id="expandedImg" style="width:100%">
+							<img id="imgtext"></div>
+						</div>
+			<script>
+				function myFunction(imgs) {
+   					var expandImg = document.getElementById("expandedImg");
+   					var imgText = document.getElementById("imgtext");
+   					expandImg.src = imgs.src;
+   					imgText.innerHTML = imgs.alt;
+   			expandImg.parentElement.style.display = "block"
+				}
+			</script>
+	<div id="footer">
+		<h2 id="name">Images are used to expand the specific image. The clicked image is shown in a container below the columns.</h2></div>
+</body>
+</html>
