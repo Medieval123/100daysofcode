@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Passing Variables by values vs by Reference</title>
+	<script src="Variable value vs Reference.js"></script>
+</head>
+<body>
+	<h1>Variables by values vs Reference.</h1>
+	<h3>Passing by Value</h3>
+	<ul>
+		<li>Given b=a, passing/copying by value means changing copied value in b does not affect the value stored in a and vice versa.</li>
+	</ul>
+	<h3>Passing by Reference.</h3>
+	<ul>
+		<li>Given b=a, passing/copying by Reference means changing copied value in b does indeed affect the value stored in a and vice versa.</li>
+	</ul>
+			<ul>
+				<li>In Javascript, Primitives are passed by value, while Objects are passed by Reference.</li>
+				<li>"Under the hood", everything is actually passed by value.</li>
+				<li>The difference comes because of the way the Objects and Primitives are stored in memory.</li>
+			</ul>
+	<h2>The difference bettween Passed by value and References.</h2>
+			<ul>
+				<li>In Passed by value, the values, once it is changed do not affect the Original value of the Original variable.</li>
+				<li>As Opposed to Passed by Reference, when yoy change the value, the Original object that it is pointing to changes as well.</li>
+			</ul>
+</body>
+</html>
