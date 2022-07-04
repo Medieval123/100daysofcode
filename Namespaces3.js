@@ -1,0 +1,2 @@
+MedievalGreeter.sayHello();
+Godspeedgreeter.sayHi();
