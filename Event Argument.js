@@ -10,25 +10,24 @@
         var message = "<h2>Hello " + name + "!</h2>";
 
         document.getElementById("content").textContent = message;
-
         document
         .getElementById("content")
         .innerHTML = message;
 
-        if (name === "Judah") {
+        if (name === "Coursera!") {
             var title =
             document
             .querySelector("#title")
             .textContent;
             title += "     ";
-
             document.querySelector("h3").textContent = title;
         }
     }
-
-              // UNOBSTRUSIVE Event Binding
     document.querySelector("button").addEventListener("click", sayHello);
       
+
+                    // *** The Js'Event' Argument ***
+
         document.querySelector("body")
         .addEventListener("mousemove",
             function (event) {
